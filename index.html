@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Hub - Advanced Calculation Solutions</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- Logo / Brand always left aligned -->
+            <a class="navbar-brand" href="index.html"><i class="fas fa-calculator"></i> Calculator Hub By Sadia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="homeLink"><i class="fas fa-house"></i> Home</a>
+                    </li>
+                    
+                        <a class="nav-link" href="" id="aboutLink"><i class="fas fa-user"></i> About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" id="contactLink"><i class="fas fa-envelope"></i> Contact </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <select class="form-select calculator-dropdown" id="calculatorSelect">
+                            <option value="">Select Calculator</option>
+                            <option value="basic">Basic Math</option>
+                            <option value="age">Age Calculator</option>
+                            <option value="days">Days Between Dates</option>
+                            <option value="timezone">Time Zone Converter</option>
+                            <option value="temperature">Temperature Converter</option>
+                            <option value="gpa">GPA Calculator</option>
+                            <option value="number">Number System</option>
+                            <option value="discount">Discount Calculator</option>
+                            <option value="currency">Currency Converter</option>
+                            <option value="length">Length Converter</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="heroSection">
+        <div class="container-fluid">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title">WellCome To <span>Calculator Hub</span></h1>
+                    <p class="hero-subtitle">Precision calculations for professionals and students. Experience the next generation of computational tools.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-hero" id="getStartedBtn">Get Started <i class="fas fa-arrow-right ms-2"></i></button>
+                        <button class="btn btn-outline-hero" id="learnMoreBtn">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="calculator-showcase">
+                        <div class="calculator-grid">
+                            <div class="calc-item calc-math">
+                                <div class="calc-icon">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <h3>Math</h3>
+                            </div>
+                            <div class="calc-item calc-time">
+                                <div class="calc-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h3>Time</h3>
+                            </div>
+                            <div class="calc-item calc-currency">
+                                <div class="calc-icon">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <h3>Currency</h3>
+                            </div>
+                            <div class="calc-item calc-science">
+                                <div class="calc-icon">
+                                    <i class="fas fa-flask"></i>
+                                </div>
+                                <h3>Science</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Calculator Section -->
+    <section class="calculator-section" id="calculatorSection">
+        <div class="container">
+            <div class="calculator-container">
+                <div class="calculator-header">
+                    <i class="fas fa-calculator" id="calcIcon"></i>
+                    <h2 id="calcTitle">Calculator</h2>
+                </div>
+                <div class="calculator-body">
+                    <div class="calculator-panel" id="calculatorPanel">
+                        <!-- Calculator content will be dynamically inserted here -->
+                    </div>
+                    <div class="guide-panel">
+                        <h3 class="guide-title"><i class="fas fa-lightbulb"></i> How to Use</h3>
+                        <ol class="guide-steps" id="guideSteps">
+                            <!-- Guide steps will be dynamically inserted here -->
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="content-section" id="aboutSection">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Frontend Developer & JavaScript Enthusiast</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4">
+                    <div class="about-image-container">
+                        <div class="about-image">
+                            <img src="mypic.png" alt="About" class="img-fluid">
+                        </div>
+                        <div class="about-experience">
+                            <div class="exp-year">2+</div>
+                            <div class="exp-text">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 mb-4">
+                    <div class="about-content">
+                        <h3>Hello! I'm Sadia Liaqat Ali</h3>
+                        <p>A passionate frontend developer dedicated to creating beautiful, functional web experiences. This Calculator Hub represents a significant milestone in my journey of mastering JavaScript and frontend development.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Clean Code</h4>
+                                    <p>Writing efficient, maintainable code with best practices</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Responsive Design</h4>
+                                    <p>Creating seamless experiences across all devices</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Performance</h4>
+                                    <p>Optimizing for speed and user experience</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-milestone">
+                            <h4>This Project: A Learning Milestone</h4>
+                            <p>Calculator Hub showcases my journey in JavaScript mastery, implementing complex calculations, API integrations, and responsive design. It represents my commitment to continuous learning and creating practical solutions.</p>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/sadialiaqatali/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://yourportfolio.com" target="_blank" class="social-link">
+                                <i class="fas fa-globe"></i> Portfolio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content-section" id="contactSection">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your project or just say hello</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mb-4">
+                    <div class="contact-form-container">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-calculate">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-container">
+                        <div class="contact-image">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Contact" class="img-fluid rounded">
+                        </div>
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p>sadia@example.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div>
+                                    <h5>LinkedIn</h5>
+                                    <p><a href="https://www.linkedin.com/in/sadialiaqatali/" target="_blank">linkedin.com/in/sadialiaqatali</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h5>Location</h5>
+                                    <p>Pakistan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="footer-title">Calculator Hub</h3>
+                    <p>Advanced calculation tools for professionals and students. Precision, speed, and reliability in every computation.</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sadialiaqatali/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://yourportfolio.com" target="_blank" class="social-icon">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" id="homeLinkFooter">Home</a></li>
+                        <li><a href="#featuresSection" id="featuresLinkFooter">Features</a></li>
+                        <li><a href="#aboutSection" id="aboutLinkFooter">About Me</a></li>
+                        <li><a href="#contactSection" id="contactLinkFooter">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3 class="footer-title">Calculators</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="calc-link" data-calc="basic">Basic Math</a></li>
+                        <li><a href="#" class="calc-link" data-calc="age">Age Calculator</a></li>
+                        <li><a href="#" class="calc-link" data-calc="days">Days Between Dates</a></li>
+                        <li><a href="#" class="calc-link" data-calc="timezone">Time Zone Converter</a></li>
+                        <li><a href="#" class="calc-link" data-calc="temperature">Temperature Converter</a></li>
+                        <li><a href="#" class="calc-link" data-calc="gpa">GPA Calculator</a></li>
+                        <li><a href="#" class="calc-link" data-calc="number">Number System</a></li>
+                        <li><a href="#" class="calc-link" data-calc="discount">Discount Calculator</a></li>
+                        <li><a href="#" class="calc-link" data-calc="currency">Currency Converter</a></li>
+                        <li><a href="#" class="calc-link" data-calc="length">Length Converter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Calculator Hub. All rights reserved. Designed and developed by Sadia Liaqat Ali.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
